@@ -41,7 +41,6 @@ Asegúrate de tener instaladas las siguientes herramientas:
 - 🖥️ **Visual Studio Code**: [Descargar VS Code](https://code.visualstudio.com/)
 - 🍃 **MongoDB Community Edition**: [Descargar MongoDB](https://www.mongodb.com/try/download/community)
 - 🐙 **Git**: [Descargar Git](https://git-scm.com/)
-- 📬 **Postman**: [Descargar Postman](https://www.postman.com/)
 
 ### 💻 Terminales Recomendadas
 
