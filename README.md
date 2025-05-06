@@ -4,18 +4,18 @@ Este repositorio contiene los ejercicios prácticos organizados por semanas y cl
 
 ## Índice
 
-- [Estructura del repositorio](#estructura-del-repositorio)
-- [Contenido del curso](#contenido-del-curso)
-- [Requisitos](#requisitos)
-- [Cómo ejecutar un ejercicio](#cómo-ejecutar-un-ejercicio)
-- [¿Cómo comenzar?](#cómo-comenzar)
-- [Cómo trabajar con los ejercicios](#cómo-trabajar-con-los-ejercicios)
-- [Subir tus cambios](#subir-tus-cambios)
-- [Cómo actualizar tu fork con lo último del curso](#cómo-actualizar-tu-fork-con-lo-último-del-curso)
-- [¿Qué hacer si aparecen conflictos al actualizar el fork?](#qué-hacer-si-aparecen-conflictos-al-actualizar-el-fork)
-- [Recomendaciones](#recomendaciones)
-- [Licencia](#licencia)
-- [Contacto](#contacto)
+- [Estructura del repositorio](#📁-estructura-del-repositorio)
+- [Contenido del curso](#📚-contenido-del-curso)
+- [Requisitos](#🛠️-requisitos)
+- [Cómo ejecutar un ejercicio](#▶️-cómo-ejecutar-un-ejercicio)
+- [¿Cómo comenzar?](#🚀-¿cómo-comenzar)
+- [Cómo trabajar con los ejercicios](#💻-cómo-trabajar-con-los-ejercicios)
+- [Subir tus cambios](#📥-subir-tus-cambios)
+- [Cómo actualizar tu fork con lo último del curso](#🔄-cómo-actualizar-tu-fork-con-lo-último-del-curso)
+- [¿Qué hacer si aparecen conflictos al actualizar el fork?](#🧩-¿qué-hacer-si-aparecen-conflictos-al-actualizar-el-fork)
+- [Recomendaciones](#🙌-recomendaciones)
+- [Licencia](#📄-licencia)
+- [Contacto](#📧-contacto)
 
 ## 📁 Estructura del repositorio
 
@@ -69,13 +69,11 @@ Asegúrate de tener instaladas las siguientes herramientas:
    cd semana1
    ```
 
-2. Abre la terminal y navega a la carpeta `semana1`:
+2. Instala las dependencias necesarias:
 
-```bash
-npm install
-```
-
-Ejecuta el archivo que quieras probar:
+   ```bash
+   npm install
+   ```
 
 3. Ejecuta el archivo que quieras probar:
 
@@ -92,8 +90,8 @@ Haz clic en el botón **"Fork"** en la parte superior derecha de esta página pa
 ### 2. Clona tu fork en tu computadora
 
 ```bash
-git clone https://github.com/tu-usuario/curso-js-basico.git
-cd curso-js-basico
+git clone https://github.com/tu-usuario/2025-2-Javascript.git
+cd 2025-2-Javascript
 ```
 
 ## 💻 Cómo trabajar con los ejercicios
@@ -120,31 +118,31 @@ git push origin main
 
 Sube tus avances a tu fork para que quede registrado tu trabajo.
 
-🔄 Cómo actualizar tu fork con lo último del curso
+## 🔄 Cómo actualizar tu fork con lo último del curso
 
 1. Agrega el repositorio de la clase como remoto (solo una vez):
 
-```bash
-git remote add upstream https://github.com/usuario-profe/curso-js-basico.git
-```
+   ```bash
+   git remote add upstream https://github.com/Inadaptados/2025-2-Javascript.git
+   ```
 
 2. Descarga los últimos cambios del repositorio original:
 
-```bash
-git fetch upstream
-```
+   ```bash
+   git fetch upstream
+   ```
 
 3. Fusiona los cambios en tu rama principal:
 
-```bash
-git merge upstream/main
-```
+   ```bash
+   git merge upstream/main
+   ```
 
 4. Sube los cambios actualizados a tu fork:
 
-```bash
-git push origin main
-```
+   ```bash
+   git push origin main
+   ```
 
 ✅ Así te aseguras de tener siempre los últimos ejercicios y prácticas disponibles.
 
@@ -160,7 +158,7 @@ A veces, al fusionar (merge) los cambios del repositorio original, Git no puede 
 
 ### 👣 Pasos para resolver conflictos y conservar tus cambios
 
-1. Después de hacer git merge upstream/main, Git te avisará si hay conflictos en algún archivo.
+1. Después de hacer `git merge upstream/main`, Git te avisará si hay conflictos en algún archivo.
 
 Por ejemplo, podrías ver algo como esto:
 
@@ -210,8 +208,6 @@ git add .
 git commit -m "Resuelvo conflictos"
 ```
 
-\*\* Git te mostrará un mensaje de merge que puedes dejar como está o editar si lo deseas.
-
 6. Finalmente sube tus cambios a tu fork
 
 ```bash
@@ -226,7 +222,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 ## 📧 Contacto
 
-[Inadaptados](https://inadaptados.mx)
+[Inadaptados](https://github.com/Inadaptados/2025-2-Javascript)
 
 ### ✅ Consejo final
 
