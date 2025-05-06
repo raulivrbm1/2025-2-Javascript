@@ -35,7 +35,18 @@ Este repositorio contiene los ejercicios prácticos organizados por semanas y cl
 
 ## 🛠️ Requisitos
 
-- Tener instalado [Node.js](https://nodejs.org/) (versión LTS)
+Asegúrate de tener instaladas las siguientes herramientas:
+
+- 🟢 **Node.js LTS**: [Descargar Node.js](https://nodejs.org/en)
+- 🖥️ **Visual Studio Code**: [Descargar VS Code](https://code.visualstudio.com/)
+- 🍃 **MongoDB Community Edition**: [Descargar MongoDB](https://www.mongodb.com/try/download/community)
+- 🐙 **Git**: [Descargar Git](https://git-scm.com/)
+- 📬 **Postman**: [Descargar Postman](https://www.postman.com/)
+
+### 💻 Terminales Recomendadas
+
+- **Windows**: [Cmdr](https://cmder.app/)
+- **Mac**: [iTerm2](https://iterm2.com/), [Oh My Zsh](https://ohmyz.sh/), [Warp](https://www.warp.dev/)
 
 ## ▶️ Cómo ejecutar un ejercicio
 
