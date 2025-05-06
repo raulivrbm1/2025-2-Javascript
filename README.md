@@ -39,6 +39,7 @@ Asegúrate de tener instaladas las siguientes herramientas:
 
 - 🟢 **Node.js LTS**: [Descargar Node.js](https://nodejs.org/en)
 - 🖥️ **Visual Studio Code**: [Descargar VS Code](https://code.visualstudio.com/)
+- 🍃 **MongoDB Community Edition**: [Descargar MongoDB](https://www.mongodb.com/try/download/community)
 - 🐙 **Git**: [Descargar Git](https://git-scm.com/)
 
 ### 💻 Terminales Recomendadas
@@ -54,9 +55,15 @@ Asegúrate de tener instaladas las siguientes herramientas:
    cd semana1
    ```
 
+2. Abre la terminal y navega a la carpeta `semana1`:
+
+```bash
+npm install
+```
+
 Ejecuta el archivo que quieras probar:
 
-2. Ejecuta el archivo que quieras probar:
+3. Ejecuta el archivo que quieras probar:
 
    ```bash
    node ejercicio1.js
