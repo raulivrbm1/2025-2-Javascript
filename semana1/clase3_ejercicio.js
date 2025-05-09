@@ -18,5 +18,6 @@ async function main() {
     console.log("Numero no válido");
   }
 }
-
+/* switch (dia) {
+}
 main();
