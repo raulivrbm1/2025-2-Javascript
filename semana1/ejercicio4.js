@@ -8,7 +8,6 @@
 const { ask } = require('../helpers/input');
 
 // TODO: Función que devuelve el mayor de dos números
-
 function obtenerMayor(a, b) {
   if (a > b) {
     return a;
@@ -23,10 +22,10 @@ async function main() {
 
 
   if (num1 === num2) {
-    console.log("Lo siento, los números que introduciste son iguales, no es posible evaluarlos");
+    console.log("Los dos numeros que ingresaste son iguales");
   } else {
     const resultado = obtenerMayor(num1, num2);
-    console.log(resultado);
+    console.log("El numero mayor es: ", resultado);
   }
 
 }
