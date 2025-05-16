@@ -39,6 +39,19 @@ function resumenEstadistico(numeros) {
   return { 'menor': menor, 'mayor': mayor, 'promedio': promedio }
 }
 
+function nombresConVocal(nombres) {
+  const vocales = ["a", "e", "i", "o", "u"];
+  const resultado = [];
+
+  for (let i = 0; i < nombres.length; i++) {
+    let primeraLetra = nombres[i][0].toLowerCase();
+    if (vocales.includes(primeraLetra)) {
+      resultado.push(nombres[i]);
+    }
+  }
+  return resultado;
+}
+
 async function main() {
   const edades = [20, 18, 25, 30, 22];
   const lista = [5, 20, 8, 99, 3];
@@ -52,6 +65,9 @@ async function main() {
   console.log(`El número menor es: ${estadistica.menor}`);
   console.log(`El número mayor es: ${estadistica.mayor}`);
   console.log(`El promedio es: ${estadistica.promedio}`);
+  console.log("Lista de nombres: ", nombres);
+  console.log("Nombres solo con vocal: ", nombresConVocal(nombres));
+
 }
 
 main();
