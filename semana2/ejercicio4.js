@@ -76,11 +76,13 @@ function nombreConVocal(nombres){
 
   for (let i = 0; i < nombres.length; i++){
     let primeraLetra = nombres[i][0].tolowerCase();
-    if(vocales.includes(primeraLeta))
+    if(vocales.includes(primeraLeta)){
+      
+    }
   }
 }
 
 
-function 
+
 
 main();

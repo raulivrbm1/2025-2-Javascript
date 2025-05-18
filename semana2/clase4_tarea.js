@@ -12,3 +12,23 @@
 //Promedio general
 //
 //La calificación más alta y la más baja
+const { ask } = require('../helpers/input');
+
+function analizarCalificaciones(numeros) {
+  let calificacionesDeEstudiantes = numeros (0 -100);
+  let aprobados = 0;
+  let reprobados = 0;
+  for(let i = 0; i <= 100; i++);
+  if (numeros[i] >= 70) {
+ aprobados = numeros[i]
+  }else{
+    reprobados = numeros[i];
+  }
+}
+
+async function main() {
+    const calificaciones = [50, 75, 46, 100, 85, 90];
+
+    console.log(`Los aprobados son: ${aprobados}`);
+}
+
