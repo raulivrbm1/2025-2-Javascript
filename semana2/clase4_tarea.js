@@ -14,16 +14,13 @@
 //La calificación más alta y la más baja
 const { ask } = require('../helpers/input');
 
-function analizarCalificaciones(numeros) {
-  let calificacionesDeEstudiantes = numeros (0 -100);
+function listaAprobados (numeros) {
   let aprobados = 0;
-  let reprobados = 0;
   for(let i = 0; i <= 100; i++);
   if (numeros[i] >= 70) {
- aprobados = numeros[i]
-  }else{
-    reprobados = numeros[i];
+  aprobados = numeros[i]
   }
+  return aprobados;
 }
 
 async function main() {
@@ -31,4 +28,5 @@ async function main() {
 
     console.log(`Los aprobados son: ${aprobados}`);
 }
+
 
