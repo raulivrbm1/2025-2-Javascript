@@ -22,7 +22,7 @@ async function main() {
         let index = frutas.indexOf(frutaEliminar);
 
         if (index !== -1) {
-          frutas.splice(index, 1);
+          frutas.splice(index, 1);   //el 1 significa que elimina un solo elemento
           console.log(`${frutaEliminar} ha sido eliminada `)
         } else {
           console.log('Fruta no encontrada ');
