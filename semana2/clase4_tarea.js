@@ -12,69 +12,66 @@
 //Promedio general
 //
 //La calificación más alta y la más baja
-const { ask } = require('../helpers/input');
-
-function listaAprobados(numeros) {
-  let aprobados = [];
-  for(let i = 0; i < numeros.length; i++){
-  if (numeros[i] >= 70) {
-  aprobados.push(numeros[i]);
-  }
-}
-
-return aprobados;
-}
-
-function listaReprobados(numeros) {
-    let reprobados = [];
-    for(let i = 0; i < numeros.length; i++){
-    if (numeros[i] < 70) {
-    reprobados.push(numeros[i]);
-    }
-  }
-  return reprobados;
-}
 
 function obtenerPromedio(numeros) {
-    let total = 0;
-    for (let i = 0; i < numeros.length; i++) {
-      total = total + numeros[i];
-    }
-    const promedio = total / numeros.length;
-  
-    return promedio;
+  let total = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    total = total + numeros[i];
   }
+  const promedio = total / numeros.length;
 
-  function calificacionMasAlta(numeros) {
-    let masAlta = numeros[0];
-    for (let i = 0; i < numeros.length; i++){
-       if (numeros[i] > masAlta) {
-        masAlta = numeros[i];
-       }
+  return promedio;
+}
+
+function obtenerMayor(numeros) {
+  let mayor = numeros[0];
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] > mayor) {
+      mayor = numeros[i];
     }
-    return masAlta;
   }
+  return mayor;
+}
 
-  function calificacionMasBaja(numeros) {
-    let masBaja = numeros[0];
-    for(let i = 0; i < numeros.length; i++){
-        if(numeros [i] < masBaja){
-        masBaja = numeros[i];
-        }
+function obtenerMenor(numeros) {
+  let menor = numeros[0];
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] < menor) {
+      menor = numeros[i];
     }
-    return masBaja;
   }
+  return menor;
+}
 
+function obtenerAprobados(numeros) {
+  let aprobados = 0;
+  let reprobados = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] >= 70) {
+      aprobados++;
+    } else {
+      reprobados++;
+    }
+  }
+  return { aprobados, reprobados };
+}
 
+function analizarCalificaciones(calificaciones) {
+  const res = obtenerAprobados(calificaciones);
+  let aprobados = res.aprobados;
+  let reprobados = res.reprobados;
+  let promedio = obtenerPromedio(calificaciones);
+  let califAlta = obtenerMayor(calificaciones);
+  let califBaja = obtenerMenor(calificaciones);
+
+  return { aprobados, reprobados, promedio, califAlta, califBaja };
+}
 
 async function main() {
-    const calificaciones = [50, 75, 46, 96, 85, 90, 70];
+  const calificaciones = [90, 89, 34, 45, 67, 89, 23, 12, 45, 89, 8, 90]
+  const resultado = analizarCalificaciones(calificaciones);
+  console.log(resultado);
 
-    console.log(`La lista de aprobados es: ${listaAprobados(calificaciones)}`);
-    console.log(`La lista de reprobados es: ${listaReprobados(calificaciones)}`);
-    console.log(`El promedio general es: ${obtenerPromedio(calificaciones)}`);
-    console.log(`la calificacion mas alta es: ${calificacionMasAlta(calificaciones)}`);
-    console.log(`la calificacion mas baja es: ${calificacionMasBaja(calificaciones)}`);
 }
 
 main();
