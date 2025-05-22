@@ -2,6 +2,15 @@
 
 let students = [];
 
+window.onload = function () {
+  const stored = localStorage.getItem("students");
+  if (stored) {
+    students = JSON.parse(stored);
+    displayStudents();
+    updateAverage();
+  }
+}
+
 function addStudent() {
   const name = document.getElementById("nameInput").value.trim();
   const grade = parseFloat(document.getElementById("gradeInput").value);
@@ -9,6 +18,7 @@ function addStudent() {
   const student = { name, grade };
   students.push(student);
 
+  saveToLocalStorage();
   displayStudents();
   updateAverage();
 }
@@ -40,5 +50,5 @@ function updateAverage() {
 }
 
 function saveToLocalStorage() {
-
+  localStorage.setItem("students", JSON.stringify(students));
 }
